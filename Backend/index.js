@@ -20,6 +20,7 @@ app.post('/notice', Notice)
 // Get All Notices
 
 app.get('/Notices', GetAllNotice)
+
 const start = async () => {
   try {
     await MongoConnection()
@@ -30,4 +31,4 @@ const start = async () => {
     console.log(error)
   }
 }
-start()
+start() //

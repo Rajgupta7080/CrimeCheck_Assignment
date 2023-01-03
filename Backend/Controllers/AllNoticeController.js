@@ -1,4 +1,5 @@
 const NoticeBoardModel = require('../Models/NoticeBoardModel')
+
 const GetAllNotice = async (req, res) => {
   try {
     let AllNotices = await NoticeBoardModel.find()
