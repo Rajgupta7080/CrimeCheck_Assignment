@@ -2,12 +2,22 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 const MongoConnection = require('./Configuration/database.js')
+const GetAllNotice = require('./Controllers/AllNoticeController.js')
+const Notice = require('./Controllers/NoticeController.js')
 const UserName = require('./Controllers/UserController.js')
 
 app.get('/', (req, res) => {
   res.send('CRIMECHECK')
 })
+// User Login Post Request
 app.post('/login', UserName)
+
+// Notice post request
+app.post('/notice', Notice)
+
+// Get All Notices
+
+app.get('/Notices', GetAllNotice)
 const start = async () => {
   try {
     await MongoConnection()
