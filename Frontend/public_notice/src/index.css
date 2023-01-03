@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://crimecheck.ai/dist/assets/5358bd18b991eb75993b91507eb904d9.png");
+  background-repeat: no-repeat;
 }
 
 code {
