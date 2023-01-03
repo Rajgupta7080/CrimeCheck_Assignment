@@ -32,13 +32,12 @@ const UserLogin = () => {
       if (res1.error) {
         alert(res1.error.message)
       } else {
+        localStorage.setItem('username', JSON.stringify(User))
         alert(res1.message)
         navigate('/NoticeBoard')
       }
 
       Setloading(false)
-
-      console.log(res1)
     } catch (err) {
       console.log(err)
     }
@@ -53,10 +52,10 @@ const UserLogin = () => {
         placeholder="Enter Username"
         onChange={handleUser}
         name="user"
-        id=""
+        id="userInput"
         value={User}
       />
-      <button disable={loading} id="Submit" onClick={handleSubmit}>
+      <button id="Submit" onClick={handleSubmit}>
         {loading ? 'Loading...' : 'Submit'}
       </button>
     </div>

@@ -1,0 +1,45 @@
+
+#noticeDiv{
+    /* border: 1px solid black; */
+    position: relative;
+    top: -25px;
+    width: 50%;
+}
+#noticeInput{
+    width: 500px;
+    height: 270px;
+    margin-left: 30px;
+    opacity: 0.7;
+    /* border: 1px solid black; */
+}
+#noticeInput:focus{
+    outline: none;
+}
+#heading{
+    width: 40%;
+    position: relative;
+    left: 2.5%;
+    font-size: 40px;
+    letter-spacing: 2px;
+    /* border: 1px solid black; */
+}
+#Smtbtn{
+    width: 45%;
+    margin-left: 18%;
+    font-size: larger;
+    padding: 13px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border: 1px solid black;
+}
+hr{
+    width: 34.5%;
+    position: relative;
+    left: -28%;
+    top: -20px;
+    /* border: 1px solid black; */
+}

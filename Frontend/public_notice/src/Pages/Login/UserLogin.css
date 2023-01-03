@@ -6,7 +6,7 @@
     border-radius: 12px;
     margin: auto;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
 }
@@ -18,7 +18,7 @@ label{
     font-size: 30px;
     color: antiquewhite;
 }
-input{
+#userInput{
     width: 90%;
     padding: 10px;
     margin-top: 5px;
@@ -30,7 +30,7 @@ input{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-input:focus{
+#userInput:focus{
     outline: none;
 }
 ::placeholder {
