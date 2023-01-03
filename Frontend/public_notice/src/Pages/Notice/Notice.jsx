@@ -54,6 +54,9 @@ const Notice = () => {
           {loading ? 'Loading...' : 'CREATE NOTICE'}
         </button>
       </div>
+      <div>
+        <GetAllNotice />
+      </div>
     </div>
   )
 }

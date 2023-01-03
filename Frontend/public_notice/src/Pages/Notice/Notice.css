@@ -1,8 +1,11 @@
-
-#noticeDiv{
+#NoticeMainDiv{
+    display: flex;
     /* border: 1px solid black; */
-    position: relative;
-    top: -25px;
+}
+#noticeDiv{
+     /* border: 1px solid black; */
+    position: fixed;
+    margin-top: -3%;
     width: 50%;
 }
 #noticeInput{
@@ -16,16 +19,16 @@
     outline: none;
 }
 #heading{
-    width: 40%;
+    width: 60%;
     position: relative;
-    left: 2.5%;
     font-size: 40px;
+    left: -7%;
     letter-spacing: 2px;
     /* border: 1px solid black; */
 }
 #Smtbtn{
     width: 45%;
-    margin-left: 18%;
+    margin-left: 20%;
     font-size: larger;
     padding: 13px;
     margin-top: 15px;
@@ -34,12 +37,12 @@
     font-weight: 500;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 hr{
-    width: 34.5%;
+    width: 36%;
     position: relative;
-    left: -28%;
+    left: -27%;
     top: -20px;
     /* border: 1px solid black; */
 }

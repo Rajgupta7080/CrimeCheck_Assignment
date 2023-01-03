@@ -1,0 +1,34 @@
+#DetailsDiv{
+    width: 50%;
+    position: relative;
+    background-color: white;
+    opacity: 0.9;
+    left: 45%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.AllNotice{
+    position: relative;
+    top: -60px;
+}
+#hrLine{
+    width: 18%;
+    margin-left: 88%;
+    margin-top: 40px;
+}
+#nameTime{
+    display: flex;
+    justify-content: space-around;
+}
+#headingNotice{
+  font-size: 40px;
+  letter-spacing: 2px;
+  position: relative;
+  left: 20%;
+  top: 12px;
+}
+h3{
+  position: relative;
+  top: 11px;
+}
