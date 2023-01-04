@@ -10,15 +10,15 @@ const GetAllNotice = () => {
       )
       let data = await result.json()
       setAllNotice(data.Notice.reverse())
-      //   console.log(data.Notice)
+      console.log(data.Notice)
     } catch (error) {
       console.log(error, 'err')
     }
   }
-  //   console.log(AllNotice)
+
   useEffect(() => {
     displayAllNotice()
-  }, [])
+  }, [AllNotice])
 
   return (
     <div className="AllNotice">

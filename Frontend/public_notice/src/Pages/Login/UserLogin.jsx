@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './UserLogin.css'
@@ -10,6 +11,13 @@ const UserLogin = () => {
     SetUser(e.target.value)
     // console.log(User)
   }
+  let name = JSON.parse(localStorage.getItem('username')) || false
+  useEffect(() => {
+    if (!name) {
+      navigate('/')
+    }
+  })
+
   const handleSubmit = async () => {
     Setloading(true)
 
@@ -42,6 +50,7 @@ const UserLogin = () => {
       console.log(err)
     }
   }
+
   return (
     <div id="LoginBox">
       <h1>LOGIN</h1>

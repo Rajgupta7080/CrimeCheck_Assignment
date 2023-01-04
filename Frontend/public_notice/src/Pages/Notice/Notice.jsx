@@ -1,14 +1,20 @@
 import React from 'react'
 import './Notice.css'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import GetAllNotice from '../GetAllNotice/GetAllNotice'
+import { useEffect } from 'react'
 const Notice = () => {
-  const [notice, setNotice] = useState()
+  const [notice, setNotice] = useState('')
   const [loading, Setloading] = useState(false)
+  const navigate = useNavigate()
   const handleNotice = (e) => {
     setNotice(e.target.value)
   }
   let userName = JSON.parse(localStorage.getItem('username'))
+  useEffect(() => {
+    return navigate('/')
+  })
   const MakeNotice = async () => {
     Setloading(true)
     try {
@@ -17,7 +23,7 @@ const Notice = () => {
         {
           method: 'POST',
           body: JSON.stringify({
-            Notice: notice,
+            notice: notice,
             name: userName,
           }),
           headers: {
@@ -26,6 +32,7 @@ const Notice = () => {
         },
       )
       let data = await PostNotice.json()
+      setNotice('')
       console.log(data)
       if (data.error) {
         alert(data.error.message)
