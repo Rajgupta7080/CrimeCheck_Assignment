@@ -3,7 +3,7 @@ const NoticeBoardModel = new mongoose.Schema(
   {
     notice: {
       type: String,
-      minlength: 100,
+      required: true,
     },
     name: {
       type: String,

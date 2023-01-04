@@ -9,7 +9,7 @@ const MongoConnection = async () => {
       useUnifiedTopology: true,
     },
   )
-  console.log('MONGO_DB IS STARTED')
+  console.log('MONGO_DB IS STARTED ')
 }
 
 module.exports = MongoConnection
