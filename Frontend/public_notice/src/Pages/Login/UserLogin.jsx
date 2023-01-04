@@ -11,12 +11,6 @@ const UserLogin = () => {
     SetUser(e.target.value)
     // console.log(User)
   }
-  let name = JSON.parse(localStorage.getItem('username')) || false
-  useEffect(() => {
-    if (!name) {
-      navigate('/')
-    }
-  })
 
   const handleSubmit = async () => {
     Setloading(true)

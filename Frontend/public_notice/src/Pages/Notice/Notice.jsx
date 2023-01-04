@@ -12,9 +12,6 @@ const Notice = () => {
     setNotice(e.target.value)
   }
   let userName = JSON.parse(localStorage.getItem('username'))
-  useEffect(() => {
-    return navigate('/')
-  })
   const MakeNotice = async () => {
     Setloading(true)
     try {
