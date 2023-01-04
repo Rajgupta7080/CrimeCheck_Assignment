@@ -32,7 +32,7 @@ const UserLogin = () => {
       let res1 = await res.json()
 
       if (res1.error) {
-        alert(res1.error.message)
+        alert('Make sure username contains only alphanumeric')
       } else {
         localStorage.setItem('username', JSON.stringify(User))
         alert(res1.message)

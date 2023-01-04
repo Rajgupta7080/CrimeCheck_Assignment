@@ -32,7 +32,7 @@ const Notice = () => {
       setNotice('')
       console.log(data)
       if (data.error) {
-        alert(data.error.message)
+        alert('Notice have atleast 100 word')
       } else {
         alert(data.message)
       }
